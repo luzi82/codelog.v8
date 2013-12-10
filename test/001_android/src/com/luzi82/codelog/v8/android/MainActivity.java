@@ -10,6 +10,12 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		byte[] buf=new byte[1024];
+		int[] size=new int[1];
+		Test.test(buf,size);
+		String s=new String(buf,0,size[0]);
+		System.err.println(s);
 	}
 
 	@Override
