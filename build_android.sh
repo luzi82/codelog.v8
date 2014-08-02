@@ -4,10 +4,9 @@
 # export PATH=${PWD}/android-sdk-linux/platform_tools:${PATH}
 export ANDROID_NDK_ROOT=${PWD}/android-ndk-r10
 
-export PATH=`pwd`/depot_tools:"$PATH"
+export PATH=${PWD}/depot_tools:"${PATH}"
 
 # From http://code.google.com/p/v8/wiki/BuildingWithGYP
 cd v8
-make dependencies
-make android_arm.release -j 9
+make android_arm.release -j 9 || exit $?
 
