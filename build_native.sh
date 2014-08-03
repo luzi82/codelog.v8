@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 # From http://code.google.com/p/v8/wiki/BuildingWithGYP
 cd v8

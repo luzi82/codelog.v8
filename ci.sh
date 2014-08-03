@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 ./prepare.sh || exit $?
 ./build_native.sh || exit $?

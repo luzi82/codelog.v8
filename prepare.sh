@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 # clean last prepare
 rm -rf android-ndk32-r10-linux-x86_64.tar.bz2

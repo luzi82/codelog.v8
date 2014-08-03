@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 # install required file
 sudo apt-get install git subversion build-essential -y

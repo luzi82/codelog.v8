@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 # From http://code.google.com/p/v8/wiki/D8OnAndroid
 # export PATH=${PWD}/android-sdk-linux/platform_tools:${PATH}
