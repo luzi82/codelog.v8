@@ -2,7 +2,8 @@
 
 # From http://code.google.com/p/v8/wiki/D8OnAndroid
 if [ ! -f "android-ndk32-r10-linux-x86_64.tar.bz2" ] ; then
-	wget http://dl.google.com/android/ndk/android-ndk32-r10-linux-x86_64.tar.bz2 || exit $?
+	echo "wget Android NDK"
+	wget -q http://dl.google.com/android/ndk/android-ndk32-r10-linux-x86_64.tar.bz2 || exit $?
 fi
 
 if [ ! -d android-ndk-r10 ] ; then
