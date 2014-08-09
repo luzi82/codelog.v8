@@ -4,3 +4,6 @@
 /android-sdk_r22.3-linux.tgz
 /v8/
 *~
+/android-ndk-r10/
+/android-ndk32-r10-linux-x86_64.tar.bz2
+/depot_tools/
