@@ -24,7 +24,9 @@ export PATH=`pwd`/depot_tools:"$PATH"
 # From http://code.google.com/p/v8/wiki/BuildingWithGYP
 if [ ! -d v8 ] ; then
 	git clone git://github.com/v8/v8.git || exit $?
-	git checkout origin/trunk -b trunk || exit $?
+	pushd v8
+		git checkout trunk || exit $?
+	popd
 fi
 pushd v8
 	git pull || exit $?
