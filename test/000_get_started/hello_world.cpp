@@ -4,6 +4,9 @@
 using namespace v8;
 
 int main(int argc, char* argv[]) {
+	  // Issue 3627
+	  V8::Initialize();
+
 	  // Create a new Isolate and make it the current one.
 	  Isolate* isolate = Isolate::New();
 	  Isolate::Scope isolate_scope(isolate);
